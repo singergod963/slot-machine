@@ -1,0 +1,15 @@
+/.git
+
+# node.js
+node_modules/
+
+/package-lock.json
+/yarn.lock.json
+
+# testing
+__coverage__/
+
+# production
+build/
+dist/
+publish/

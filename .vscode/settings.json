@@ -1,0 +1,93 @@
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "npm.packageManager": "pnpm",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "eslint.format.enable": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+    ],
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "postcss": "css"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "michelemelluso.code-beautifier"
+    },
+    "[postcss]": {
+        "editor.defaultFormatter": "michelemelluso.code-beautifier"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "michelemelluso.code-beautifier"
+    },
+    "scss.lint.unknownAtRules": "ignore",
+    "npm.exclude": "**/@(backend|frontend|publish)",
+    "git.autofetch": true,
+    "gitlens.mode.active": "zen",
+    "vscodeGitCommit.template": [
+        "{type}: {message}"
+    ],
+    "vscodeGitCommit.variables": {
+        "type": [
+            {
+                "label": ":sparkles: feat", "detail": "✨ feat: 新增/修改功能 (feature)"
+            },
+            {
+                "label": ":bug: fix", "detail": "🐛 fix: 修補 bug (bug fix)"
+            },
+            {
+                "label": ":books: docs", "detail": "📚 docs: 文件 (documentation)"
+            },
+            {
+                "label": ":art: style", "detail": "🎨 style: 格式 (不影響程式碼運行的變動 white-space, formatting, missing semi colons, etc)"
+            },
+            {
+                "label": ":hammer: refactor", "detail": "🔨 refactor: 重構 (既不是新增功能，也不是修補 bug 的程式碼變動)"
+            },
+            {
+                "label": ":racehorse: perf", "detail": "🐎 perf: 改善效能 (A code change that improves performance)"
+            },
+            {
+                "label": ":rotating_light: test", "detail": "🚨 test: 增加測試 (when adding missing tests)"
+            },
+            {
+                "label": ":wrench: chore", "detail": "🔧 chore: 建構程序或輔助工具的變動 (maintain)"
+            },
+            {
+                "label": ":rewind: revert", "detail": "⏪ revert: 撤銷 (回覆先前的 commit)"
+            },
+        ]
+    },
+    "hediet.vscode-drawio.theme": "Kennedy",
+    "cSpell.words": [
+        "ahooks",
+        "codemirror",
+        "endregion",
+        "esbuild",
+        "gcloud",
+        "mongod",
+        "saveas",
+        "Sider",
+        "superwall",
+        "TCOM",
+        "TDEM",
+        "TOne2DIRECT",
+        "TSMM",
+        "TSPL",
+        "Tstatistics"
+    ]
+}
