@@ -1,0 +1,100 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    width: 100vw;
+    height: calc(100vw * 625 / 1024);
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    top: 0px; right: 0px; bottom: 0px; left: 0px;
+    /* background-image: url("../images/bg.png"); */
+    background-color: #00cc00;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+    overflow: hidden;
+}
+
+.fix {
+    display: block;
+    width: 1024px;
+    height: 625px;
+    padding: 0;
+}
+
+.randomizeMachine {
+    opacity: 0;
+}
+
+.machine {
+    position: absolute;
+    height: 75px;
+    display: inline-block;
+    top: 273px;
+}
+
+#machine1 {
+    left: 294px;
+}
+
+#machine2 {
+    left: 599px;
+}
+
+#machine3 {
+    left: 699px;
+}
+
+.ename {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 122px;
+    top: 343px;
+    text-align: center;
+    color:#fdfaf6;
+    font-size: 45px;
+    line-height: 85px;
+}
+
+.content {
+    color:#fdfaf6;
+    font-size: 75px;
+    line-height: 80px;
+    text-align: right;
+}
+
+.logo {
+    width: 165px;
+    height: 165px;
+    position: absolute;
+    display: inline-block;
+    left: 232px;
+    top: 252px;
+}
+
+.logo-img {
+    width: 165px;
+    height: 165px;
+}
+
+button, input {
+    display: none;
+}
+
+@media (min-width: 163.84vh) {
+    .container {
+      height: 100vh;
+      width: calc(100vh * 1024 / 625);
+    }
+}
+
+#machine1 .content {
+    width: 300px;
+    letter-spacing: 15px;
+}

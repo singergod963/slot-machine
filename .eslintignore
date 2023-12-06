@@ -3,13 +3,7 @@
 # node.js
 node_modules/
 
+# minified
+*.min.js
+
 /package-lock.json
-/yarn.lock.json
-
-# testing
-__coverage__/
-
-# production
-build/
-dist/
-publish/

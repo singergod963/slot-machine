@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  <link rel="stylesheet" href="./css/jquery.slotmachine.css" type="text/css" media="screen" />
+  <!-- <link rel="stylesheet" href="./css/slotmachine.css" type="text/css" media="screen" /> -->
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAADUsYIAS6/pAAI29gD9/f4A+fHmAA8x0gC8vroAx6HiACBbtgAHbPMAUIvjAD7f+AA6lt4Ah+L9AKyemQD8/vwA/f78AP7+/ADw+P0ATYDRANvUxgCp+PgA6KfAAPRdwQC1ldQA+P79APDXtQB+W6sAqTWYAPz+/QDLx8sArLypAP7+/QD51qcABB/NAOO2hgBXaacAkDZ+APb49gCguuoA2cK4AAMy6wDI9v4A/f7+ANSYuwAFL+MA/v7+AMV7qgBcQ8gA64PMAPLZuQDv1/kAy2frAMK1zgDt7e0ACTbxAOa8oAAH2vsAxV/hAN6F0ABneOEA4IjxAP7+/wCILHsAb4FkAHjKuAChl+sAZEWSAO3l7ADvv/wA3bOBAA1F6QDaluwAj0DIANG1zwD4+f4Al3VLAB2n7gCEW6YApmnQADJmtADJl+IA8s28AP3a0QDKm74A79GxAP7//gD09PQA///+AGmD5QDXg/EA3j6qAKNOkACe7/4A3Y32AB89pQD1f9IAq+z+AD1k5AD9//8A/v//AP///wBxpJkAYqr9AP3t3wDw8PAAtrydALy0xAD7/voASdbuAP39/QDu7u4A39/fAE7Q3gBQlv0AqntEAEux/ADktZcA+P3+AGnLwgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWVlZWVlZWVlZEQrZWVlZWVlZWVlYx5hckpOMWVlZWVlZWVlLlxDZwE7HDACLmVlZWVlBGovPyYqGRAFX2JlZWVlR1l3MlZWZWVlEilGZWVlHQwIditlZWVlZRFATBFlZSwYN2VlZWVlZWVlGkg1ZS4kJS5lV29waWllZTM8XmUuFgZlZVc2cGlpbmVlPUVlIUEAZWVlZWVlZWVlZXUfFGUjUi5lZVhlZWVlZQNoU2VlBxNJC3FaNGtlZWVgG1suZStPUU0JOkIOZWU+DRdUZWVlLj4VOSBVZjgtCm10K2VlZWVlZWVlbHMoUCJdD2VlZWVlZWVlZWVlZSdLZWVlZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon">
+  <title>抽獎程式</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="fix">
+      <div id="logo-icon" class="logo randomizeMachine">
+        <div class="logo-img"><img src=""></div>
+      </div>
+      <div id="machine1" class="machine randomizeMachine">
+        <div class="content content1">一</div>
+        <div class="content content2">二</div>
+        <div class="content content3">三</div>
+        <div class="content content4">四</div>
+        <div class="content content5">五</div>
+        <div class="content content6">六</div>
+        <div class="content content7">七</div>
+        <div class="content content8">八</div>
+        <div class="content content9">九</div>
+        <div class="content content10">十</div>
+      </div>
+      <div id="machine2" class="machine randomizeMachine">
+        <div class="content content1">一</div>
+        <div class="content content2">二</div>
+        <div class="content content3">三</div>
+        <div class="content content4">四</div>
+        <div class="content content5">五</div>
+        <div class="content content6">六</div>
+        <div class="content content7">七</div>
+        <div class="content content8">八</div>
+        <div class="content content9">九</div>
+        <div class="content content10">十</div>
+      </div>
+      <div id="machine3" class="machine randomizeMachine">
+        <div class="content content1">一</div>
+        <div class="content content2">二</div>
+        <div class="content content3">三</div>
+        <div class="content content4">四</div>
+        <div class="content content5">五</div>
+        <div class="content content6">六</div>
+        <div class="content content7">七</div>
+        <div class="content content8">八</div>
+        <div class="content content9">九</div>
+        <div class="content content10">十</div>
+      </div>
+      <div class="ename">Abcdefghi Jklmn</div>
+      <input 
+        class="save" 
+        type="file" 
+        accept="xlsx"
+      ></input>
+      <button class="output">output</button>
+      <button class="start">start</button>
+      <button class="stop">stop</button>
+      <button class="sample">repeat</button>
+      <button class="fullscreen">fullscreen</button>
+    </div>
+  </div>
+  <audio id="prize1" src="media/prize1.mp3"></audio>
+  <audio id="prize2" src="media/prize2.mp3"></audio>
+  <audio id="prize3" src="media/prize3.mp3"></audio>
+  <audio id="roll" src="media/roll.mp3" loop></audio>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/slotmachine.min.js"></script>
+  <script src="./js/jquery.slotmachine.min.js"></script>
+  <script src="./js/dayjs.min.js"></script>
+  <script src="./js/xlsx.full.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
