@@ -80,6 +80,11 @@ $(function () {
 
 	//#region 抽獎
 	async function getWinner (c = 1) {
+		if (localStorage.getItem('members') == null) {
+			alert('請先匯入名單！');
+			return;
+		}
+
 		const list = JSON.parse(localStorage.getItem('members') ?? []);
 		const winIndex = list.filter(f => f.win == true).length + 1;
 		const noWinList = list.filter(v => v.win === false);
