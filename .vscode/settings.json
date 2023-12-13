@@ -2,7 +2,7 @@
     "typescript.tsdk": "node_modules/typescript/lib",
     "npm.packageManager": "pnpm",
     "editor.codeActionsOnSave": {
-        "source.fixAll": true
+        "source.fixAll": "explicit"
     },
     "eslint.format.enable": true,
     "eslint.validate": [
